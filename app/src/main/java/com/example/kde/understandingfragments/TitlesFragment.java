@@ -18,7 +18,7 @@ public class TitlesFragment extends ListFragment {
         super.onActivityCreated(savedInstanceState);
 
         //figure out how to populate setlistadapter from database
-        setListAdapter(new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_activated_1, Textbooks.BOOKPOSTINGS));
+        setListAdapter(new ArrayAdapter<>(getActivity(),android.R.layout.simple_list_item_activated_1, Textbooks.BOOKPOSTINGS));
 
         //expensive hit to figure out if details have already been loaded
         View detailsFrame = getActivity().findViewById(R.id.details);
